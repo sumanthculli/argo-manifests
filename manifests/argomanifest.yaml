@@ -20,7 +20,7 @@ spec:
         - |
           aws secretsmanager rotate-secret \
             --secret-id arn:aws:secretsmanager:us-west-2:889195446400:secret:dev/eks/pgsqlcreds-E7FH6A \
-            --client-request-token 61d33628-72d3-5d79-a226-9033cb0590b3
+            --client-request-token 74a61bc1-e174-d409-738d-b436bc4c566c
       restartPolicy: Never
       serviceAccountName: nginx-sa
   backoffLimit: 2
