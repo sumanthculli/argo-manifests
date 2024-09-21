@@ -19,7 +19,7 @@ spec:
         args:
         - |
           aws secretsmanager rotate-secret \
-            --secret-id your-secret-arn \
+            --secret-id arn:aws:secretsmanager:us-west-2:889195446400:secret:dev/eks/pgsqlcreds-E7FH6A \
             --client-request-token $(uuidgen)
       restartPolicy: Never
       serviceAccountName: nginx-sa
