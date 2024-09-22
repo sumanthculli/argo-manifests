@@ -40,7 +40,7 @@ spec:
     metadata:
       labels:
         app: nginx-secrets
-        attr1: pre-sync
+        attr1: pre-sync-1
     spec:
       serviceAccountName: nginx-sa  # Ensure this service account has necessary permissions
       volumes:
