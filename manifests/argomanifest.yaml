@@ -20,7 +20,7 @@ spec:
         - |
           aws secretsmanager rotate-secret \
             --secret-id arn:aws:secretsmanager:us-west-2:889195446400:secret:dev/eks/pgsqlcreds-E7FH6A \
-            --client-request-token 8208873a-b36d-dbc9-587a-3ff06d9d6112
+            --client-request-token 6fbdcfb4-1766-0541-29ea-341682a8975a
       restartPolicy: Never
       serviceAccountName: nginx-sa
   backoffLimit: 2
@@ -40,7 +40,7 @@ spec:
     metadata:
       labels:
         app: nginx-secrets
-        attr10: pre-sync-10
+        attr11: pre-sync-11
     spec:
       serviceAccountName: nginx-sa  # Ensure this service account has necessary permissions
       volumes:
